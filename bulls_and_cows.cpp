@@ -221,8 +221,8 @@ int main()
 	while (1)
 	{
 		system("CLS");
-		puts("  1 - New Game");
-		puts("  2 - New Game (easy)");
+		puts("  1 - New Game (easy)");
+		puts("  2 - New Game (normal)");
 		puts("  3 - New Game (hard)");
 		puts("  4 - Test Game");
 		puts("  0 - Exit");
@@ -230,8 +230,8 @@ int main()
 		
 		switch (c)
 		{
-		case '1':Game_new(j);break;
-		case '2':New_game_easy(j);break;
+		case '1':New_game_easy(j);break;
+		case '2':Game_new(j);break;
 		case '3':New_game_hard(j);break;
 		case '4':runTest();break;
 		case '0':return 0;
