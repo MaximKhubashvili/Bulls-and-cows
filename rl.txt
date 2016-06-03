@@ -1,6 +1,6 @@
-Правила игры:
-Ваша задача заключается в том, чтобы угадать загаданное четырехзначное число, состоящее из различным цифр
-Количество быков - это количество цифр, которое Вы угадали и по местоположению и по значению
-Количество коров - это количество цифр, которое Вы угадали по значению, но по местоположению Вы не смогли угадать
-Игра прекратится, когда количество быков станет равным четырех, в этом случае Вы победили!
-Желаем успехов!
+Rules of the game :
+Your task is to guess the hidden four-digit number , consisting of various numbers.
+The number of bulls - this is the number of digits you have guessed , and by location and value.
+The number of cows - is the number of digits you have guessed by value, but by location You could not guess.
+The game stops when the number of bulls will be equal to four , in this case, you have won!
+Good luck wish !
