@@ -160,8 +160,8 @@ void New_game_hard(int correct_number)
 	//printf("The specified number:%d\n",x);
 	do
 	{
-		cout << "Attempt:" << endl; 
-		cout << attempt;
+		cout << "Attempt: "; 
+		cout << attempt << endl;
 		do
 		{
 			cout << "Enter the number:" << endl;
@@ -215,6 +215,7 @@ int main()
 {
 	int l, j;
 	char c;
+	FILE *file;
 	srand(time(0));
 	j = generate_start_number();
 	
@@ -225,6 +226,7 @@ int main()
 		puts("  2 - New Game (normal)");
 		puts("  3 - New Game (hard)");
 		puts("  4 - Test Game");
+		puts("  5 - Rules");
 		puts("  0 - Exit");
 		c = getch();
 		
@@ -234,6 +236,15 @@ int main()
 		case '2':Game_new(j);break;
 		case '3':New_game_hard(j);break;
 		case '4':runTest();break;
+		case '5':
+			system("CLS");
+			setlocale(LC_CTYPE, "Russian");
+			file = fopen("rl.txt", "rb");
+			while ((c = getc(file)) != EOF)
+				putchar(c);
+			fclose(file);
+			getch();
+			break; 
 		case '0':return 0;
 		default: puts("Error!");
 		}
